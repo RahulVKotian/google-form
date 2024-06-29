@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Application Form - VYZEN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <img src="sc.jpg">
+        <h1>Candidate Application Form - VYZEN</h1>
+        <p>Please fill out the following details accurately to apply for the position. Ensure you upload necessary documents where required. Fields marked with an asterisk (*) are mandatory.</p>
+        <p><strong>The name, email, and photo associated with your Google account will be recorded when you upload files and submit this form</strong></p>
+        <form id="multiStepForm">
+            <!-- Step 1 -->
+            <div class="form-step active">
+                <p><strong>* Indicates required question</strong></p>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" value="rahulkotian2021@gmail.com" required>
+                
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                
+                <label for="middle-name">Middle Name</label>
+                <input type="text" id="middle-name" name="middle-name" placeholder="Enter your middle name">
+                
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+                
+                <label for="contact-number">Contact Number *</label>
+                <input type="tel" id="contact-number" name="contact-number" placeholder="+(Country Code) [Number]" required>
+                
+                <label for="alternate-contact-number">Alternate Contact Number *</label>
+                <input type="tel" id="alternate-contact-number" name="alternate-contact-number" placeholder="+(Country Code) [Number]" required>
+                
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <label for="age">Age *</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                
+                <label for="gender">Gender *</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                </select>
+                
+                <label for="marital-status">Marital Status *</label>
+                <select id="marital-status" name="marital-status" required>
+                    <option value="married">Married</option>
+                    <option value="unmarried">Unmarried</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                </select>
+                
+                <label for="nationality">Nationality / Citizen *</label>
+                <input type="text" id="nationality" name="nationality" placeholder="Enter your nationality" required>
+                
+                <label for="blood-group">Blood Group *</label>
+                <input type="text" id="blood-group" name="blood-group" placeholder="Enter your blood group" required>
+                
+
+                <button type="button" class="next-btn">Next</button>
+            </div>
+            <!-- Step 2 -->
+            <div class="form-step">
+                <h2>ADDRESS INFORMATION</h2>
+                <label for="current-address">Current Residential Address *</label>
+                <textarea id="current-address" name="current-address" placeholder="Enter your current residential address in full along with City, State, Postal Code" required></textarea>
+                
+                <label for="permanent-address">Permanent Residential Address *</label>
+                <textarea id="permanent-address" name="permanent-address" placeholder="Enter your permanent residential address in full along with City, State, Postal Code" required></textarea>
+                
+                <label for="current-location">Current Location *</label>
+                <input type="text" id="current-location" name="current-location" placeholder="Enter your current city of residence" required>
+                
+                <label for="preferred-location">Preferred Location *</label>
+                <input type="text" id="preferred-location" name="preferred-location" placeholder="Enter your preferred city of residence" required>
+                
+                <button type="button" class="prev-btn">Previous</button>
+                <button type="button" class="next-btn">Next</button>
+            </div>
+            <!-- Step 3 -->
+            <div class="form-step">
+                    <h2>IDENTIFICATION DOCUMENTS</h2>
+                    
+                    <label for="passport">Do you have a passport? *</label>
+                    <select id="passport" name="passport" required>
+                        <option value="">Select</option>
+                        <option value="yes">YES</option>
+                        <option value="no">NO</option>
+                    </select>
+                    
+                    <div id="passport-details" style="display: none;">
+                        <label for="passport-number">Passport Number</label>
+                        <input type="text" id="passport-number" name="passport-number" placeholder="Enter your passport number">
+                        
+                        <label for="passport-copy">Upload your Passport Copy</label>
+                        <input type="file" id="passport-copy" name="passport-copy">
+                    </div>
+                    
+                    <label for="aadhaar-number">Aadhaar Card Number *</label>
+                    <input type="text" id="aadhaar-number" name="aadhaar-number" placeholder="Enter your Aadhaar card number" required>
+                    
+                    <label for="aadhaar-copy">Upload your Aadhaar Card Copy</label>
+                    <input type="file" id="aadhaar-copy" name="aadhaar-copy">
+                    
+                    <label for="pan-number">PAN Card Number *</label>
+                    <input type="text" id="pan-number" name="pan-number" placeholder="Enter your PAN card number" required>
+                    
+                    <label for="pan-copy">Upload your PAN Card Copy</label>
+                    <input type="file" id="pan-copy" name="pan-copy">
+                    
+                    <label for="driving-license-number">Driving License Details (if applicable)</label>
+                    <input type="text" id="driving-license-number" name="driving-license-number" placeholder="Enter your driving license number if applicable">
+                    
+                    <label for="driving-license-copy">Upload your Driving License Copy</label>
+                    <input type="file" id="driving-license-copy" name="driving-license-copy">
+                    
+                    <label for="voter-id-number">Voter ID Card Details (if applicable)</label>
+                    <input type="text" id="voter-id-number" name="voter-id-number" placeholder="Enter your Voter ID card number if applicable">
+                    
+                    <label for="voter-id-copy">Upload your Voter ID Copy</label>
+                    <input type="file" id="voter-id-copy" name="voter-id-copy">
+                    
+                    <button type="button" class="prev-btn">Previous</button>
+                    <button type="button" class="next-btn">Next</button>
+            </div>
+
+            <div class="form-step">
+
+                <h2>PROFESSIONAL LINKS AND DOCUMENTS</h2>
+                
+                <label for="photograph">Photograph *</label>
+                <p>Description: Upload a recent passport-sized photograph.</p>
+                <input type="file" id="photograph" name="photograph" required>
+                
+                
+                <label for="work-link">Work Link/Portfolio (LinkedIn) *</label>
+                <p>Description: Provide a link to your LinkedIn profile or online portfolio.</p>
+                <input type="url" id="work-link" name="work-link" placeholder="Provide a link to your LinkedIn profile or online portfolio" required>
+                
+                <label for="resume">Please attach your updated Resume/CV *</label>
+                <p>Description: Upload your resume and portfolio.</p>
+                <input type="file" id="resume" name="resume" required>
+                
+                <label for="social-media-links">Please share the links of your Social Media Profiles (LinkedIn, Facebook, Instagram, etc.) *</label>
+                <p>Description: Provide links to your social media profiles.</p>
+                <textarea id="social-media-links" name="social-media-links" placeholder="Provide links to your social media profiles" required></textarea>
+                
+                <label for="online-portfolio">Please share the links of your Online Portfolio or Website (if applicable) *</label>
+                <p>Description: Provide the link to your online portfolio or personal website.</p>
+                <input type="url" id="online-portfolio" name="online-portfolio" placeholder="Provide the link to your online portfolio or personal website. If none, please mention NA" required>
+                
+                <label for="skills">Skills *</label>
+                <p>Description: List down all the skills you possess.</p>
+                <textarea id="skills" name="skills" placeholder="List down all the skills you possess" required></textarea>
+                
+                <label for="languages">Languages *</label>
+                <p>Description: List the languages you are proficient in.</p>
+                <textarea id="languages" name="languages" placeholder="List the languages you are proficient in" required></textarea>
+                
+                <button type="button" class="prev-btn">Previous</button>
+                <button type="button" class="next-btn">Next</button>
+            </div>
+            <div class="form-step">
+                <h2>EDUCATIONAL DETAILS</h2>
+                <p>Please share details of your highest qualification only.</p>
+
+                <label for="education-course">Education: Course *</label>
+                <p>Description: Enter the course you have completed.</p>
+                <input type="text" id="education-course" name="education-course" placeholder="Enter the course you have completed" required>
+
+                <label for="education-specialization">Education: Specialization *</label>
+                <p>Description: Enter your area of specialization.</p>
+                <input type="text" id="education-specialization" name="education-specialization" placeholder="Enter your area of specialization" required>
+
+                <label for="education-institution">Education: Institution *</label>
+                <p>Description: Enter the name of the institution where you completed your course.</p>
+                <input type="text" id="education-institution" name="education-institution" placeholder="Enter the name of the institution where you completed your course" required>
+
+                <label for="education-year">Education: Year of Completion *</label>
+                <p>Description: Enter the date you completed your course.</p>
+                <input type="date" id="education-year" name="education-year" required>
+
+                <label for="education-percentage">Education: Pass Percentage *</label>
+                <p>Description: Enter the percentage you achieved in your course. Format: 85.6%.</p>
+                <input type="text" id="education-percentage" name="education-percentage" placeholder="Enter the percentage you achieved in your course. Format: 85.6%" required>
+
+                <label for="education-proof">Upload Proof of Education Completion *</label>
+                <p>Description: Upload the proof of your education completion. Please upload your consolidated marksheet or semester marksheet, provisional degree certificate, degree completion certificate.</p>
+                <input type="file" id="education-proof" name="education-proof" required>
+
+                <label for="certifications">Any Certifications *</label>
+                <p>Description: Select 'Yes' if you have any certifications, otherwise select 'No'.</p>
+                <select id="certifications" name="certifications" required>
+                    <option value="">Select</option>
+                    <option value="yes">YES</option>
+                    <option value="no">NO</option>
+                </select>
+
+                
+                    <label for="certification-obtained">Certifications Obtained *</label>
+                    <p>Description: List the certifications you have obtained.</p>
+                    <textarea id="certification-obtained" name="certification-obtained" placeholder="List the certifications you have obtained" required></textarea>
+
+                    <label for="certification-authority">Name of Certification Issuing Authority *</label>
+                    <p>Description: Enter the name of the authority that issued the certification.</p>
+                    <input type="text" id="certification-authority" name="certification-authority" placeholder="Enter the name of the authority that issued the certification" required>
+
+                    <label for="certification-date">Certification Completion Date *</label>
+                    <p>Description: Select the date when the certification was issued.</p>
+                    <input type="date" id="certification-date" name="certification-date" required>
+
+                    <label for="certification-proof">Upload Proof of Certification *</label>
+                    <p>Description: Upload the proof of your certification.</p>
+                    <input type="file" id="certification-proof" name="certification-proof" required>
+        
+        
+
+        <label for="joining-date">Please Enter a Tentative Date you are expected to join us in case you are shortlisted/selected *</label>
+        <input type="date" id="joining-date" name="joining-date" required>
+
+        <label for="fresher">Are you a Fresher? *</label>
+        <select id="fresher" name="fresher" required>
+            <option value="">Select</option>
+            <option value="yes">YES</option>
+            <option value="no">NO</option>
+        </select>
+
+        <button type="button" class="prev-btn">Previous</button>
+        <button type="button" class="next-btn">Next</button>
+        </div>
+        <div class="form-step">
+            <h2>ACKNOWLEDGEMENT CONSENT</h2>
+            
+            <label for="background-check-consent">Consent to conduct background checks *</label>
+            <input type="radio" value="">Select
+            <input type="radio" value="">Select
+            <select id="background-check-consent" name="background-check-consent" required>
+                <option value="">Select</option>
+                <option value="yes">YES</option>
+                <option value="no">NO</option>
+                <option value="maybe">MAYBE</option>
+            </select>
+
+            <label for="drug-test-consent">Consent to Drug/Alcohol Testing Consent *</label>
+            <select id="drug-test-consent" name="drug-test-consent" required>
+                <option value="">Select</option>
+                <option value="yes">YES</option>
+                <option value="no">NO</option>
+                <option value="maybe">MAYBE</option>
+            </select>
+            
+            <label for="criminal-convictions-disclosure">Disclosure of any Criminal Convictions or Pending Criminal Cases *</label>
+            <select id="criminal-convictions-disclosure" name="criminal-convictions-disclosure" required>
+                <option value="">Select</option>
+                <option value="yes">YES</option>
+                <option value="no">NO</option>
+            </select>
+            <p>Description: Select 'Yes' if you have any criminal convictions or pending criminal cases, otherwise select 'No'.</p>
+            
+            <div id="criminal-convictions-details" style="display: none;">
+                <label for="criminal-convictions-details-text">Details of any Criminal Convictions or Pending Criminal Cases *</label>
+                <textarea id="criminal-convictions-details-text" name="criminal-convictions-details-text" placeholder="If you selected 'Yes' above, please provide details of your criminal convictions or pending criminal cases, including charges, dates, and outcomes." required></textarea>
+            </div>
+
+            <label for="information-acknowledgement">By submitting this form, I acknowledge that all the information provided is true and accurate to the best of my knowledge. *</label>
+            <select id="information-acknowledgement" name="information-acknowledgement" required>
+                <option value="">Select</option>
+                <option value="yes">YES</option>
+                <option value="no">NO</option>
+            </select>
+
+            <button type="button" class="prev-btn">Previous</button>
+            <button type="submit">Submit</button>
+        </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
